@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37" height="36" viewBox="0 0 37 36">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <ellipse id="prefix__Ellipse_1" cx="18.5" cy="18" fill="#ebebeb" data-name="Ellipse 1" rx="18.5" ry="18" transform="translate(-.431 .451)"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__Mask_Group_2" clip-path="url(#prefix__clip-path)" data-name="Mask Group 2" transform="translate(.431 -.451)">
+        <g id="prefix__fb-01" fill-rule="evenodd" transform="translate(.182)">
+            <path id="prefix__Path_169" fill="#fff" d="M0 18.137a17.956 17.956 0 1 1 35.91 0 18.03 18.03 0 0 1-17.955 18.138A18.088 18.088 0 0 1 0 18.137z" data-name="Path 169"/>
+            <path id="prefix__Path_170" fill="#0a315f" d="M24.6 31.6v-9.839h2.73l.365-3.372H24.6v-1.732c0-.911.091-1.367 1.367-1.367h1.732v-3.373H24.96c-3.281 0-4.375 1.641-4.375 4.375V18.3H18.58v3.372h2.005v9.843l4.01.091z" data-name="Path 170" transform="translate(-5.365 -3.441)"/>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <path id="a" d="M0 0h1440v768H0z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="#FFF" d="M-932-33H508v3907H-932z"/>
+        <path fill="#00BCF1" d="M-932-33H508v769.087H-932z"/>
+        <use fill="#34CEF9" transform="translate(-932 -33)" xlink:href="#a"/>
+        <path fill="#34CEF9" d="M-932-33H508v88H-932z"/>
+        <g>
+            <g stroke="#FFF" stroke-linecap="round" transform="translate(-27 -9)">
+                <rect width="163" height="40" rx="20"/>
+                <g stroke-linejoin="round">
+                    <path stroke-width="2" d="M46.282 17.739l3.433-2.005-7.351-4.217-3.399 2.04z"/>
+                    <path stroke-width="1.7" d="M34.234 12.324l-.638.367-5.346 3.078 3.502 1.935 7.283-4.217-3.399-1.97"/>
+                    <path stroke-width="1.7" d="M46.282 21.727v4.48l-1.301.76m-1.573.918L39 30.458l-7.282-4.251V21.99m0-4.251L39 13.487l7.282 4.252"/>
+                    <path stroke-width="2" d="M42.398 23.891l7.317-4.182-3.398-1.97-7.352 4.251z"/>
+                    <path stroke-width="2" d="M35.636 23.96l3.399-1.97-7.317-4.217-3.468 1.936z"/>
+                    <path d="M39.035 21.99l7.247-4.251-7.247-4.252-7.387 4.252z"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

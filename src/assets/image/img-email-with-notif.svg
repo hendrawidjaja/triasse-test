@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="126.421" height="89.976" viewBox="0 0 126.421 89.976">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#208ae5}
+        </style>
+    </defs>
+    <g id="prefix__mail" transform="translate(0 2.5)">
+        <g id="prefix__Group_96" data-name="Group 96" transform="translate(0 14.588)">
+            <g id="prefix__Group_95" data-name="Group 95">
+                <path id="prefix__Path_261" d="M100.235 121.2H9.124A9.11 9.11 0 0 0 0 130.3v54.666a9.116 9.116 0 0 0 9.124 9.124h91.11a9.149 9.149 0 0 0 9.124-9.124V130.3a9.144 9.144 0 0 0-9.123-9.1zm5.464 63.764a5.478 5.478 0 0 1-5.464 5.464H9.124a5.478 5.478 0 0 1-5.464-5.464V130.3a5.478 5.478 0 0 1 5.464-5.464h91.11a5.478 5.478 0 0 1 5.466 5.464z" class="prefix__cls-1" data-name="Path 261" transform="translate(0 -121.2)"/>
+            </g>
+        </g>
+        <g id="prefix__Group_98" data-name="Group 98" transform="translate(7.311 21.856)">
+            <g id="prefix__Group_97" data-name="Group 97">
+                <path id="prefix__Path_262" d="M122.456 149.889a1.831 1.831 0 0 0-2.51-.627L80 173.235a9.156 9.156 0 0 1-9.386 0l-39.922-23.948a1.811 1.811 0 0 0-2.484.68 1.833 1.833 0 0 0 .6 2.458l39.947 23.948a12.719 12.719 0 0 0 13.124 0l39.949-23.973a1.855 1.855 0 0 0 .628-2.511z" class="prefix__cls-1" data-name="Path 262" transform="translate(-27.963 -149)"/>
+            </g>
+        </g>
+        <g id="prefix__Group_100" data-name="Group 100" transform="translate(7.294 29.15)">
+            <g id="prefix__Group_99" data-name="Group 99">
+                <path id="prefix__Path_263" d="M29.73 176.9a1.835 1.835 0 0 0-1.83 1.83v47.37a1.83 1.83 0 0 0 3.66 0v-47.37a1.87 1.87 0 0 0-1.83-1.83z" class="prefix__cls-1" data-name="Path 263" transform="translate(-27.9 -176.9)"/>
+            </g>
+        </g>
+        <g id="prefix__Group_102" data-name="Group 102" transform="translate(98.404 29.15)">
+            <g id="prefix__Group_101" data-name="Group 101">
+                <path id="prefix__Path_264" d="M378.23 176.9a1.835 1.835 0 0 0-1.83 1.83v47.37a1.83 1.83 0 0 0 3.66 0v-47.37a1.853 1.853 0 0 0-1.83-1.83z" class="prefix__cls-1" data-name="Path 264" transform="translate(-376.4 -176.9)"/>
+            </g>
+        </g>
+        <circle id="prefix__Ellipse_8" cx="14.588" cy="14.588" r="14.588" fill="#e50e0e" stroke="#fff" stroke-miterlimit="10" stroke-width="5px" data-name="Ellipse 8" transform="translate(94.744)"/>
+        <text id="prefix___1" fill="#fff" data-name="1" font-family="OpenSans-Bold, Open Sans" font-size="15px" font-weight="700" transform="translate(103.977 18.83)">
+            <tspan x="0" y="0">1</tspan>
+        </text>
+    </g>
+</svg>

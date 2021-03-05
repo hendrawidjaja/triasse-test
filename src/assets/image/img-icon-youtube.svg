@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <ellipse id="prefix__Ellipse_7" cx="18" cy="18.5" fill="#ebebeb" data-name="Ellipse 7" rx="18" ry="18.5" transform="translate(-.08 -.317)"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__Mask_Group_7" clip-path="url(#prefix__clip-path)" data-name="Mask Group 7" transform="translate(.08 .317)">
+        <g id="prefix__Youtube-01" fill-rule="evenodd" transform="translate(.182)">
+            <path id="prefix__Path_253" fill="#fff" d="M.384 18.266a17.956 17.956 0 1 1 35.91 0 17.956 17.956 0 1 1-35.91 0z" data-name="Path 253" transform="translate(-.384 -.128)"/>
+            <path id="prefix__Path_254" fill="#0a315f" d="M20.014 25.408l4.922-2.552-4.922-2.556zm1.914-8.75c3.828 0 6.38.182 6.38.182a2.356 2.356 0 0 1 1.823.729 3.342 3.342 0 0 1 .729 1.823 26.88 26.88 0 0 1 .182 2.917v1.367a26.88 26.88 0 0 1-.182 2.917 3.342 3.342 0 0 1-.729 1.823 2.356 2.356 0 0 1-1.823.729s-2.552.182-6.38.182a61.823 61.823 0 0 1-6.2-.182 3.841 3.841 0 0 1-2.005-.729A3.342 3.342 0 0 1 13 26.593a24.7 24.7 0 0 1-.182-2.825V22.4A26.88 26.88 0 0 1 13 19.484a3.342 3.342 0 0 1 .729-1.823 2.356 2.356 0 0 1 1.823-.729 42.651 42.651 0 0 1 6.376-.274z" data-name="Path 254" transform="translate(-3.973 -4.901)"/>
+        </g>
+    </g>
+</svg>

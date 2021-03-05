@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37">
+    <defs>
+        <clipPath id="prefix__clip-path">
+            <ellipse id="prefix__Ellipse_6" cx="18" cy="18.5" fill="#ebebeb" data-name="Ellipse 6" rx="18" ry="18.5" transform="translate(-.044 -.317)"/>
+        </clipPath>
+    </defs>
+    <g id="prefix__Mask_Group_6" clip-path="url(#prefix__clip-path)" data-name="Mask Group 6" transform="translate(.044 .317)">
+        <g id="prefix__Twitter-01" fill-rule="evenodd" transform="translate(.182)">
+            <path id="prefix__Path_251" fill="#fff" d="M.384 18.266a17.956 17.956 0 1 1 35.91 0 17.956 17.956 0 1 1-35.91 0z" data-name="Path 251" transform="translate(-.384 -.128)"/>
+            <path id="prefix__Path_252" fill="#0a315f" d="M21.456 19.318v.638l-.638-.091a10.022 10.022 0 0 1-6.018-3.007l-.82-.82-.182.638a3.682 3.682 0 0 0 .82 3.828c.547.547.365.638-.456.273l-.547-.182a4.023 4.023 0 0 0 .456 1.732 4.3 4.3 0 0 0 1.729 1.64l.638.273h-.729c-.729 0-.729 0-.638.273a3.918 3.918 0 0 0 2.37 2.1l.82.273-.82.456a6.255 6.255 0 0 1-3.372.911 5.713 5.713 0 0 0-1 .091 11.159 11.159 0 0 0 2.461 1.094 10.714 10.714 0 0 0 8.2-.911 11.084 11.084 0 0 0 4.197-4.927 12.044 12.044 0 0 0 .82-3.828c0-.547 0-.638.729-1.367a4.005 4.005 0 0 0 .911-1c.091-.273.091-.273-.547 0-1.094.365-1.185.365-.729-.273a3.814 3.814 0 0 0 .82-1.367.565.565 0 0 0-.365.182 6.612 6.612 0 0 1-1.094.456l-.638.182-.638-.456a4.059 4.059 0 0 0-1.094-.547 3.564 3.564 0 0 0-2.187.091 3.64 3.64 0 0 0-2.461 3.646z" data-name="Path 252" transform="translate(-4.047 -4.553)"/>
+        </g>
+    </g>
+</svg>
