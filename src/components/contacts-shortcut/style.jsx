@@ -4,6 +4,7 @@ import { COLOR, DEVICE, FONT, SPACING, flex, SCREEN } from "../../styles/base";
 
 export const Section = styled.div`
   ${SPACING.contactShortcut};
+  ${SPACING.gutter};
   ${COLOR.contactShortcutBg};
   box-shadow: 0 1px 4px 0 rgba(32, 32, 32, 0.2);
 `;

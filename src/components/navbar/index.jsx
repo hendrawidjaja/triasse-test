@@ -1,36 +1,77 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import Button from "../../atomic/buttons";
-import { Content, Section, Img, Wrapper } from "./style";
+import MenuHamburger from "../../atomic/menuHamburger";
+import {
+  ButtonHamburger,
+  Content,
+  HamburgerMenuStrip,
+  Img,
+  Section,
+  Wrapper,
+  WrapperButton,
+} from "./style";
 
 const Navbar = () => {
+  const [toggleHamburgerMenu, setToggleHamburgerMenu] = useState(false);
+
   const handleClick = (obj) => {
     console.log(obj);
   };
 
+  const handleHamburgerMenu = () => {
+    setToggleHamburgerMenu((prevState) => !prevState);
+  };
+
   return (
-    <Section className="navbar">
-      <Content>
+    <Section className="section-navbar">
+      <Content className="content">
         <Link to="/#">
           <Img
             src={require("../../assets/image/img-brand-logo@3x.png").default}
           />
         </Link>
 
-        <Wrapper>
-          <Link onClick={() => handleClick("Paket Test Darah")} to="/#">
-            Paket Test Darah
-          </Link>
-          <Link onClick={() => handleClick("Laboratorium")} to="/#">
-            Laboratorium
-          </Link>
-          <Link onClick={() => handleClick("Artikel")} to="/#">
-            Artikel
-          </Link>
+        <ButtonHamburger
+          className="btn-hamburger"
+          onClick={handleHamburgerMenu}>
+          <HamburgerMenuStrip
+            className={`${
+              toggleHamburgerMenu ? "open" : ""
+            }`}></HamburgerMenuStrip>
+          <HamburgerMenuStrip
+            className={`${
+              toggleHamburgerMenu ? "open" : ""
+            }`}></HamburgerMenuStrip>
+        </ButtonHamburger>
 
-          <Button click={() => handleClick("SignIn")}>Masuk</Button>
-          <Button click={() => handleClick("Register")}>Daftar</Button>
+        <Wrapper
+          className={`wrapper-menu${toggleHamburgerMenu ? " open" : ""}`}>
+          <MenuHamburger
+            menus={[
+              {
+                title: "Paket Test Darah",
+                link: "/#",
+                click: () => handleClick("Paket Test Darah"),
+              },
+              {
+                title: "Laboratorium",
+                link: "/#",
+                click: () => handleClick("Laboratorium"),
+              },
+              {
+                title: "Artikel",
+                link: "/#",
+                click: () => handleClick("Artikel"),
+              },
+            ]}
+          />
+
+          <WrapperButton className="wrapper-button">
+            <Button click={() => handleClick("SignIn")}>Masuk</Button>
+            <Button click={() => handleClick("Register")}>Daftar</Button>
+          </WrapperButton>
         </Wrapper>
       </Content>
     </Section>

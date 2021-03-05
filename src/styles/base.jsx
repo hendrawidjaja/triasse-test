@@ -27,7 +27,7 @@ export const SCREEN = {
 };
 
 export const SPACING = {
-  Gutter: `
+  gutter: `
     padding-left: 0.6rem;
     padding-right: 0.6rem;
 
@@ -85,7 +85,7 @@ export const SPACING = {
 
 export const FONT = {
   btn: `
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: bold;
 
     @media ${DEVICE.minDesktop} {
@@ -95,22 +95,13 @@ export const FONT = {
 
   a: `
     font-weight: 500;
-
-    @media ${DEVICE.minDesktop} {
-    }
   `,
 
   p: `
     font-weight: 500;
-
-    @media ${DEVICE.minDesktop} {
-    }
   `,
 
   h2: `
     font-weight: 600;
-
-    @media ${DEVICE.minDesktop} {
-    }
   `,
 };

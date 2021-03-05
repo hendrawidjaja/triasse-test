@@ -11,7 +11,6 @@ function App() {
     <div className="App">
       <Globalstyle />
       <Router>
-        <ContactShortcut />
         <Navbar />
       </Router>
     </div>
