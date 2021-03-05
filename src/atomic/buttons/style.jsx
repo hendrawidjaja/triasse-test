@@ -7,7 +7,8 @@ export const StyledButton = styled.button`
   background-color: ${COLOR.btnBgNavbar};
   color: ${COLOR.btnNavbar};
   min-width: 5rem;
-  padding: 0.75rem 0;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
 
   &:hover {
     background-color: ${COLOR.btnNavbar};

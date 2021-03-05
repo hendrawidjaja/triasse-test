@@ -48,24 +48,11 @@ export const Wrapper = styled(flex)`
     align-items: center;
     background: transparent;
     flex-direction: row;
+    left: unset;
     margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
     width: auto;
-  }
-
-  a {
-    color: #29365f;
-    margin-top: 0.5rem;
-    ${FONT.a};
-
-    @media ${DEVICE.minDesktop} {
-      &:not(:first-of-type) {
-        margin-left: 3rem;
-      }
-
-      &:last-of-type {
-        margin-right: 1.5rem;
-      }
-    }
   }
 
   button {
@@ -83,11 +70,12 @@ export const Wrapper = styled(flex)`
 `;
 
 export const ButtonHamburger = styled.div`
+  ${SPACING.gutter};
   display: flex;
   flex-direction: column;
-  left: 0.8rem;
+  left: 1rem;
   position: absolute;
-  top: 0.8rem;
+  top: 1rem;
 
   span {
     transition: 0.4s linear;
@@ -120,11 +108,14 @@ export const HamburgerMenuStrip = styled.span`
 
 export const WrapperButton = styled(flex)`
   flex-direction: column;
-  margin-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-top: 2.5rem;
   max-width: 50%;
 
   @media ${DEVICE.minDesktop} {
-    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+    margin-left: 3rem;
     flex-direction: row;
   }
 `;
