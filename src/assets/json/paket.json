@@ -1,0 +1,32 @@
+{
+  "test": [
+    {
+      "value": "",
+      "name": "Select one..."
+    },
+    {
+      "value": "1",
+      "name": "Paket Skrining Diabetes Mellitus"
+    },
+    {
+      "value": "2",
+      "name": "Glukosa Puasa*"
+    },
+    {
+      "value": "3",
+      "name": "Cholesterol (kolesterol) Total*"
+    },
+    {
+      "value": "4",
+      "name": "Cholesterol (kolesterol) HDL*"
+    },
+    {
+      "value": "5",
+      "name": "Insulin"
+    },
+    {
+      "value": "6",
+      "name": "Pap Smear"
+    }
+  ]
+}

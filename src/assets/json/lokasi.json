@@ -1,0 +1,111 @@
+{
+  "provinsi": [
+    {
+      "value": "",
+      "name": "Select one...",
+      "id": 0
+    },
+    {
+      "value": "dki",
+      "name": "DKI Jakarta",
+      "id": 1
+    },
+    {
+      "value": "aceh",
+      "name": "Aceh",
+      "id": 2
+    },
+    {
+      "value": "bali",
+      "name": "Bali",
+      "id": 3
+    }
+  ],
+  "kota": [
+    {
+      "value": "dki",
+      "name": "Select one...",
+      "id": 0
+    },
+    {
+      "value": "dki",
+      "name": "Jakarta Utara",
+      "id": 1
+    },
+    {
+      "value": "dki",
+      "name": "Jakarta Timur",
+      "id": 2
+    },
+    {
+      "value": "dki",
+      "name": "Jakarta Selatan",
+      "id": 3
+    },
+    {
+      "value": "dki",
+      "name": "Jakarta Barat",
+      "id": 4
+    },
+    {
+      "value": "dki",
+      "name": "Jakarta Pusat",
+      "id": 5
+    },
+    {
+      "value": "aceh",
+      "name": "Select one...",
+      "id": 0
+    },
+    {
+      "value": "aceh",
+      "name": "Meulaboh",
+      "id": 1
+    },
+    {
+      "value": "aceh",
+      "name": "Daya Blangpidie",
+      "id": 2
+    },
+    {
+      "value": "aceh",
+      "name": "Kota Jantho",
+      "id": 3
+    },
+    {
+      "value": "aceh",
+      "name": "Jaya Calang",
+      "id": 4
+    },
+    {
+      "value": "aceh",
+      "name": "Tapak Tuan",
+      "id": 5
+    },
+    {
+      "value": "aceh",
+      "name": "Singkil",
+      "id": 6
+    },
+    {
+      "value": "aceh",
+      "name": "Karang Baru",
+      "id": 7
+    },
+    {
+      "value": "aceh",
+      "name": "Takengon",
+      "id": 8
+    },
+    {
+      "value": "aceh",
+      "name": "Kutacane",
+      "id": 9
+    },
+    {
+      "value": "aceh",
+      "name": "Idi Rayeuk",
+      "id": 10
+    }
+  ]
+}
