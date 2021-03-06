@@ -13,7 +13,7 @@ export const Img = styled.img`
 `;
 
 export const Section = styled(flex)`
-  background-color: rgba(238, 247, 255, 1);
+  background-color: var(--cl-soft-blue);
   ${SPACING.gutter};
 `;
 

@@ -34,7 +34,9 @@ export const Globalstyle = createGlobalStyle`
   }
 
   button {
+    align-items: center;
     border: none;
+    cursor: pointer;
   }
 
   #root {
@@ -47,5 +49,5 @@ export const Globalstyle = createGlobalStyle`
 
 export const THEME = {
   Light: {},
-  Dark: {},
+  Dark: {}
 };

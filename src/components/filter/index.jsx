@@ -1,16 +1,19 @@
-/* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable array-callback-return */
 /* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import {
+  Button,
+  Content,
+  ButtonCustom,
   Label,
   Option,
   Section,
-  Select,
-  SectionSelect,
   SectionOutput,
-  WrapperSelect,
+  SectionSelect,
+  Select,
+  SelectBox,
+  Span,
+  WrapperSelect
 } from "./style";
 import LOKASI from "../../assets/json/lokasi.json";
 import PAKET from "../../assets/json/paket.json";
@@ -24,9 +27,24 @@ const Filter = () => {
   const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => console.log("16", data);
 
-  useEffect(() => {
-    console.log("20", totalTest);
-  }, [totalTest]);
+  const handleCancelTest = (e) => {
+    const temp = Object.values(totalTest).filter((item) => item !== e.target.value);
+    setTotalTest(temp);
+    setSelectedTest();
+  };
+
+  const handleAddTest = (e) => {
+    const value = e.target.value;
+    console.log(
+      "37",
+      Object.values(totalTest).map((item) => item.includes(value))
+    );
+
+    if (value !== "Select one / more...") {
+      setSelectedTest(value);
+      setTotalTest((old) => [...old, value]);
+    }
+  };
 
   const SelectProvinsi = React.forwardRef(({ label }, ref) => (
     <WrapperSelect className="select-option">
@@ -69,17 +87,7 @@ const Filter = () => {
   const SelectCustom = React.forwardRef(({ label }, ref) => (
     <WrapperSelect className="select-option">
       <Label>{label}</Label>
-      <Select
-        name={label}
-        ref={ref}
-        onChange={(e) => {
-          const value = e.target.value;
-          if (value !== "Select one...") {
-            setSelectedTest(value);
-            setTotalTest((old) => [...old, value]);
-          }
-        }}
-        value={selectedTest}>
+      <Select name={label} ref={ref} onChange={(e) => handleAddTest(e)} value={selectedTest}>
         {PAKET.test.map((item, index) => {
           return (
             selectedLocation &&
@@ -96,18 +104,43 @@ const Filter = () => {
 
   return (
     <Section className="section-filter">
-      <SectionSelect>
-        <SelectProvinsi label="Provinsi" ref={register} />
-        <SelectKotaKabupaten label="Kota/Kabupaten" ref={register} />
-        <SelectCustom label="Paket dan Jenis pemeriksaan" ref={register} />
-      </SectionSelect>
+      <Content className="conten">
+        <SectionSelect className="wrapper-select">
+          <SelectProvinsi label="Provinsi" ref={register} />
+          <SelectKotaKabupaten label="Kota/Kabupaten" ref={register} />
+          <SelectCustom label="Paket dan Jenis pemeriksaan" ref={register} />
+        </SectionSelect>
 
-      <SectionOutput>
-        {totalTest.length > 0 &&
-          totalTest.map((item, index) => {
-            return <React.Fragment key={index}>{item}</React.Fragment>;
-          })}
-      </SectionOutput>
+        <SectionOutput className="section-output">
+          {totalTest.length > 0 &&
+            totalTest.map((item, index) => {
+              return (
+                <SelectBox className="output" key={index}>
+                  <Span>{item}</Span>
+                  <Button
+                    className="btn-cancel"
+                    value={item}
+                    onClick={(e) => handleCancelTest(e)}>
+                    X
+                  </Button>
+                </SelectBox>
+              );
+            })}
+          {totalTest && totalTest.length > 2 && (
+            <ButtonCustom
+              btnDeleteAll
+              onClick={() => {
+                setSelectedTest();
+                setTotalTest([]);
+              }}>
+              Hapus semua
+            </ButtonCustom>
+          )}
+          {totalTest && totalTest.length > 1 && (
+            <ButtonCustom btnFindLab>Cari Lab</ButtonCustom>
+          )}
+        </SectionOutput>
+      </Content>
     </Section>
   );
 };

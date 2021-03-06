@@ -11,7 +11,7 @@ export const COLOR = {
   p: `color: rgba(128, 128, 128, 1)`,
   btnNavbar: `rgba(79, 115, 219, 1)`,
   btnBgNavbar: `rgba(235,244,255, 0.8)`,
-  link: `hsl(221.1,39.7%,26.7%)`,
+  link: `hsl(221.1,39.7%,26.7%)`
 };
 
 export const DEVICE = {
@@ -20,11 +20,11 @@ export const DEVICE = {
   minMobileL: `(min-width: 425px)`,
   minTablet: `(min-width: 768px)`,
   minDesktop: `(min-width: 960px)`,
-  minDesktopM: `(min-width: 1920px)`,
+  minDesktopM: `(min-width: 1920px)`
 };
 
 export const SCREEN = {
-  maxWidth: `1180px`,
+  maxWidth: `1180px`
 };
 
 export const SPACING = {
@@ -75,13 +75,13 @@ export const SPACING = {
 
   filter: `
     padding-top: 1.5rem;
-    padding-bottom: 1.75rem;
+    padding-bottom: 2.5rem;
 
     @media ${DEVICE.minDesktop} {
-      padding-top: 1.75rem;
-      padding-bottom: 2rem;
+      padding-top: 2rem;
+      padding-bottom: 3.25rem;
     }
-  `,
+  `
 };
 
 export const FONT = {
@@ -104,5 +104,5 @@ export const FONT = {
 
   h2: `
     font-weight: 600;
-  `,
+  `
 };

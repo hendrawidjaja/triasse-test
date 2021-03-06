@@ -24,8 +24,8 @@ export const Content = styled(flex)`
 `;
 
 export const Img = styled.img`
-  max-width: 5rem;
   ${SPACING.myAuto};
+  max-width: 5rem;
 
   @media ${DEVICE.minDesktop} {
     max-width: 8rem;
@@ -39,8 +39,8 @@ export const Wrapper = styled(flex)`
   width: 100%;
 
   &.open {
-    margin-top: 1rem;
     background: #f0ffff;
+    margin-top: 1rem;
     transition: 0.8s all ease-out;
   }
 

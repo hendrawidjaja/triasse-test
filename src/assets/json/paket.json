@@ -2,7 +2,7 @@
   "test": [
     {
       "value": "",
-      "name": "Select one..."
+      "name": "Select one / more..."
     },
     {
       "value": "1",
