@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
 import styled from "styled-components";
-import { DEVICE, FONT, SPACING, flex, SCREEN } from "../../styles/base";
+import { DEVICE, SPACING, flex, SCREEN } from "../../styles/base";
 
 export const Section = styled(flex)`
-  ${SPACING.navbar};
+  padding-top: 1rem;
 
   @media ${DEVICE.minDesktop} {
     box-shadow: 0 1px 4px 0 rgba(32, 32, 32, 0.2);
+    padding-bottom: 1rem;
   }
 `;
 
@@ -34,14 +35,13 @@ export const Img = styled.img`
 export const Wrapper = styled(flex)`
   ${SPACING.gutter};
   flex-direction: column;
-  left: -1000px;
-  transition: 0.5s linear;
+  transition: 0.8s all ease-in;
   width: 100%;
 
   &.open {
+    margin-top: 1rem;
     background: #f0ffff;
-    left: 0;
-    transition: 0.4s ease-out;
+    transition: 0.8s all ease-out;
   }
 
   @media ${DEVICE.minDesktop} {
@@ -70,7 +70,6 @@ export const Wrapper = styled(flex)`
 `;
 
 export const ButtonHamburger = styled.div`
-  ${SPACING.gutter};
   display: flex;
   flex-direction: column;
   left: 1rem;
@@ -107,12 +106,18 @@ export const HamburgerMenuStrip = styled.span`
 `;
 
 export const WrapperButton = styled(flex)`
+  display: none;
   flex-direction: column;
+  max-width: 50%;
   padding-bottom: 2.5rem;
   padding-top: 2.5rem;
-  max-width: 50%;
+
+  &.open {
+    display: flex;
+  }
 
   @media ${DEVICE.minDesktop} {
+    display: flex;
     padding-bottom: 0;
     padding-top: 0;
     margin-left: 3rem;

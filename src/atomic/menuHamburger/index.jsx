@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { WrapperLink } from "./style";
 
-const MenuHamburger = ({ menus }) => (
-  <WrapperLink>
+const MenuHamburger = ({ props, menus }) => (
+  <WrapperLink className={`${props ? "open" : ""}`}>
     {menus.map((item, index) => (
       <Link key={index} to={item.link} onClick={item.click}>
         {item.title}

@@ -10,39 +10,50 @@ export const Section = styled.div`
 `;
 
 export const Content = styled(flex)`
-  align-content: center;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  ${SPACING.myAuto};
+  align-items: flex-end;
+  flex-direction: column;
 
   @media ${DEVICE.minDesktop} {
+    flex-direction: row;
     justify-content: flex-end;
     width: ${SCREEN.maxWidth};
+    ${SPACING.myAuto};
   }
 `;
 
 export const Img = styled.img`
-  margin-right: 0.5rem;
-  min-height: 1.1rem;
-  min-width: 1.1rem;
+  display: none;
+
+  @media ${DEVICE.minDesktop} {
+    display: flex;
+    margin-right: 0.5rem;
+    min-height: 1.1rem;
+    min-width: 1.1rem;
+  }
 `;
 
 export const P = styled.p`
   ${COLOR.p};
   white-space: nowrap;
   ${FONT.p};
+  font-size: 0.75rem;
+
+  @media ${DEVICE.minDesktop} {
+    font-size: 1rem;
+  }
 `;
 
 export const Wrapper = styled(flex)`
   align-items: center;
 
-  &:last-of-type {
-    ${SPACING.myAuto};
+  &:not(:first-of-type) {
+    margin-top: 0.25rem;
   }
 
   @media ${DEVICE.minDesktop} {
     &:not(:first-of-type) {
-      margin-left: 1.25rem;
+      margin-top: 0;
+      margin-left: 1.5rem;
     }
 
     &:last-of-type {

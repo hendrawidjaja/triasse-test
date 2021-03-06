@@ -10,7 +10,7 @@ import {
   Img,
   Section,
   Wrapper,
-  WrapperButton,
+  WrapperButton
 } from "./style";
 
 const Navbar = () => {
@@ -28,47 +28,39 @@ const Navbar = () => {
     <Section className="section-navbar">
       <Content className="content">
         <Link to="/#">
-          <Img
-            src={require("../../assets/image/img-brand-logo@3x.png").default}
-          />
+          <Img src={require("../../assets/image/img-brand-logo@3x.png").default} />
         </Link>
 
-        <ButtonHamburger
-          className="btn-hamburger"
-          onClick={handleHamburgerMenu}>
+        <ButtonHamburger className="btn-hamburger" onClick={handleHamburgerMenu}>
           <HamburgerMenuStrip
-            className={`${
-              toggleHamburgerMenu ? "open" : ""
-            }`}></HamburgerMenuStrip>
+            className={`${toggleHamburgerMenu ? "open" : ""}`}></HamburgerMenuStrip>
           <HamburgerMenuStrip
-            className={`${
-              toggleHamburgerMenu ? "open" : ""
-            }`}></HamburgerMenuStrip>
+            className={`${toggleHamburgerMenu ? "open" : ""}`}></HamburgerMenuStrip>
         </ButtonHamburger>
 
-        <Wrapper
-          className={`wrapper-menu${toggleHamburgerMenu ? " open" : ""}`}>
+        <Wrapper className={`wrapper-menu${toggleHamburgerMenu ? " open" : ""}`}>
           <MenuHamburger
+            props={toggleHamburgerMenu}
             menus={[
               {
                 title: "Paket Test Darah",
                 link: "/#",
-                click: () => handleClick("Paket Test Darah"),
+                click: () => handleClick("Paket Test Darah")
               },
               {
                 title: "Laboratorium",
                 link: "/#",
-                click: () => handleClick("Laboratorium"),
+                click: () => handleClick("Laboratorium")
               },
               {
                 title: "Artikel",
                 link: "/#",
-                click: () => handleClick("Artikel"),
-              },
+                click: () => handleClick("Artikel")
+              }
             ]}
           />
 
-          <WrapperButton className="wrapper-button">
+          <WrapperButton className={`wrapper-button${toggleHamburgerMenu ? " open" : ""}`}>
             <Button click={() => handleClick("SignIn")}>Masuk</Button>
             <Button click={() => handleClick("Register")}>Daftar</Button>
           </WrapperButton>
