@@ -39,6 +39,10 @@ export const Globalstyle = createGlobalStyle`
     cursor: pointer;
   }
 
+  input {
+    border: none;
+  }
+
   #root {
   }
 

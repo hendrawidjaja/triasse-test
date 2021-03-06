@@ -47,12 +47,12 @@ export const H2 = styled.h2`
 
 export const P = styled.p`
   ${FONT.p};
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   padding-bottom: 1.25rem;
   padding-top: 0.5rem;
 
   @media ${DEVICE.minDesktop} {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 1.25rem;
     padding-top: 0.5rem;
   }

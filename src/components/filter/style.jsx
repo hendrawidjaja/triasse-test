@@ -4,12 +4,13 @@ import { flex, DEVICE, SCREEN, SPACING } from "../../styles/base";
 
 export const Section = styled(flex)`
   flex-direction: column;
+
   &:after {
+    background-color: rgb(101, 133, 210);
+    content: " ";
     display: flex;
     height: 3px;
     width: 100%;
-    content: " ";
-    background-color: rgb(101, 133, 210);
   }
 `;
 
@@ -25,7 +26,7 @@ export const Content = styled(flex)`
 `;
 
 export const Label = styled(flex)`
-  font-size: 1rem;
+  font-size: 0.9rem;
 
   @media ${DEVICE.minDesktop} {
     font-size: 1.2rem;
@@ -83,7 +84,7 @@ export const Select = styled.select`
 
   @media ${DEVICE.minDesktop} {
     height: 3em;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -91,12 +92,12 @@ export const Select = styled.select`
 
 export const SectionOutput = styled(flex)`
   flex-wrap: wrap;
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-top: 1rem;
 
   @media ${DEVICE.minDesktop} {
     flex-direction: row;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -128,12 +129,12 @@ export const Span = styled.span`
 export const Button = styled.button`
   background-color: var(--bg-btn-cancel);
   color: #ffffff;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   margin-left: 0.5rem;
 
   @media ${DEVICE.minDesktop} {
     padding: 0.1rem 0.15rem 0;
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 `;
 
@@ -148,25 +149,22 @@ export const ButtonCustom = styled.button`
   ${(props) =>
     props.btnFindLab &&
     css`
-      background-color: var(--bg-btn-find-lab);
+      background-color: var(--bg-btn-confirm);
       color: #ffffff;
       margin-left: auto;
     `};
 
   font-size: 0.9rem;
   margin-top: 0.5rem;
+  min-width: 8rem;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
 
   @media ${DEVICE.minDesktop} {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-top: 0.75rem;
     min-width: 10rem;
     padding-bottom: 0.75rem;
     padding-top: 0.75rem;
   }
-`;
-
-export const HorizontalLine = styled.div`
-  background-color: rgb(101, 133, 210);
 `;

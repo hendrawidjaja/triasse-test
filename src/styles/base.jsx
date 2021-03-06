@@ -33,8 +33,8 @@ export const SPACING = {
     padding-right: 0.6rem;
 
     @media ${DEVICE.minDesktop} {
-      padding-left: 0.6rem;
-      padding-right: 0.6rem;
+      padding-left: 0;
+      padding-right: 0;
     }
   `,
 
@@ -86,12 +86,7 @@ export const SPACING = {
 
 export const FONT = {
   btn: `
-    font-size: 0.85rem;
     font-weight: bold;
-
-    @media ${DEVICE.minDesktop} {
-      font-size: 1.1rem;
-    }
   `,
 
   a: `
