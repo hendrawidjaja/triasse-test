@@ -30,22 +30,23 @@ export const Content = styled(flex)`
   padding-top: 2rem;
 
   @media ${DEVICE.minDesktop} {
-    align-items: center;
     ${SPACING.myAuto};
+    align-items: center;
+    flex-direction: row;
     padding-bottom: 4rem;
     padding-top: 4rem;
     width: ${SCREEN.maxWidth};
-    flex-direction: row;
   }
 `;
 
 export const H3 = styled.h3`
   color: #ffffff;
-  font-size: 1rem;
+  font-size: 0.9rem;
   letter-spacing: 0.5px;
+  line-height: 1.4;
 
   @media ${DEVICE.minDesktop} {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 `;
 

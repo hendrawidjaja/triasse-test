@@ -1,14 +1,14 @@
 /* eslint-disable no-unused-vars */
 import { BrowserRouter as Router } from "react-router-dom";
 import { Globalstyle } from "./styles/global";
-import "./style.scss";
 import ContactShortcut from "./components/contacts-shortcut";
-import Navbar from "./components/navbar";
-import HeroBanner from "./components/hero-banner";
-import Filter from "./components/filter/index";
-import Newsletter from "./components/newsletter";
-import Footer from "./components/footer";
 import Copyright from "./components/copyright";
+import Filter from "./components/filter/index";
+import Footer from "./components/footer";
+import HeroBanner from "./components/hero-banner";
+import Navbar from "./components/navbar";
+import Newsletter from "./components/newsletter";
+import "./style.scss";
 
 function App() {
   return (

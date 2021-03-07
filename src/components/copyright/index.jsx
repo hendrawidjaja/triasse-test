@@ -1,8 +1,18 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React from "react";
+import { Section, P } from "./style";
 
 const Copyright = () => {
-  return <></>;
+  const date = new Date();
+
+  return (
+    <Section className="section-copyright">
+      <P>
+        Copyright &copy; {date.getFullYear()} PT. Digital Medika Informatik. All rights
+        reserved.{" "}
+      </P>
+    </Section>
+  );
 };
 
 export default Copyright;

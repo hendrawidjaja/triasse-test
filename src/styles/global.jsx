@@ -43,6 +43,11 @@ export const Globalstyle = createGlobalStyle`
     border: none;
   }
 
+  ul {
+    padding-inline-start: 0;
+    list-style-type: none;
+  }
+
   #root {
   }
 
