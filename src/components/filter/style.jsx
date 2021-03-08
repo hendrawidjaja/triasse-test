@@ -142,14 +142,14 @@ export const ButtonCustom = styled.button`
   ${(props) =>
     props.btnDeleteAll &&
     css`
-      background-color: var(--bg-btn-cancel-all);
+      background-color: var(--cl-light-grey);
       color: var(--cl-btn-cance-all);
     `};
 
   ${(props) =>
     props.btnFindLab &&
     css`
-      background-color: var(--bg-btn-confirm);
+      background-color: var(--cl-orange);
       color: #ffffff;
       margin-left: auto;
     `};

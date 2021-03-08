@@ -8,7 +8,7 @@ const radius = {
 };
 
 export const Button = styled.button`
-  background-color: var(--bg-btn-confirm);
+  background-color: var(--cl-orange);
   border-bottom-right-radius: ${radius.size};
   border-top-right-radius: ${radius.size};
   color: #ffffff;

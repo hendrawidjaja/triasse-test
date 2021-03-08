@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import styled from "styled-components";
-import { DEVICE, SCREEN, SPACING, flex } from "../../styles/base";
+import { DEVICE, SCREEN, SPACING, flex, grid } from "../../styles/base";
 
 export const UL = styled.ul``;
 export const Wrapper = styled(flex)``;
@@ -9,9 +9,7 @@ export const Section = styled(flex)`
   background-color: rgb(13, 49, 95);
 `;
 
-export const Content = styled.div`
-  display: grid;
-  position: relative;
+export const Content = styled(grid)`
   ${SPACING.gutter};
 
   @media ${DEVICE.minDesktop} {

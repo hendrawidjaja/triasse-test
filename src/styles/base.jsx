@@ -6,6 +6,11 @@ export const flex = styled.div`
   position: relative;
 `;
 
+export const grid = styled.div`
+  display: grid;
+  position: relative;
+`;
+
 export const COLOR = {
   contactShortcutBg: `background-color: rgba(234, 234, 234, 1)`,
   p: `color: rgba(128, 128, 128, 1)`,

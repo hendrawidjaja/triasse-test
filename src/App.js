@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Globalstyle } from "./styles/global";
 import ContactShortcut from "./components/contacts-shortcut";
 import Copyright from "./components/copyright";
@@ -8,6 +8,7 @@ import Footer from "./components/footer";
 import HeroBanner from "./components/hero-banner";
 import Navbar from "./components/navbar";
 import Newsletter from "./components/newsletter";
+import Home from "./components/home";
 import "./style.scss";
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
       <Router>
         <Navbar />
         <Filter />
+        <Switch>
+          <Route path="/" exact component={Home} />
+        </Switch>
       </Router>
       <Newsletter />
 
