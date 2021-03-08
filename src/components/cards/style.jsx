@@ -39,9 +39,6 @@ export const Details = styled.ul`
   padding-top: 1rem;
   position: relative;
   grid-template-columns: 25% auto auto;
-
-  @media ${DEVICE.minDesktop} {
-  }
 `;
 
 export const Li = styled.li`
@@ -64,6 +61,7 @@ export const Pricing = styled(grid)`
     align-content: center;
     grid-template-columns: auto;
     grid-template-rows: 15% 25% 25%;
+    justify-items: flex-start;
     padding: 1rem 2rem;
   }
 `;
@@ -101,7 +99,7 @@ export const Span = styled.span`
 
       @media ${DEVICE.minDesktop} {
         margin-top: 0.5rem;
-        font-size: 1.6rem;
+        font-size: 1rem;
       }
     `};
 
@@ -114,7 +112,7 @@ export const Span = styled.span`
 
       @media ${DEVICE.minDesktop} {
         font-size: 1.8rem;
-        margin-top: 0.5rem;
+        margin-top: 1rem;
       }
     `};
 `;

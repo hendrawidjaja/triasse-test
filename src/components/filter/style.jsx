@@ -168,3 +168,5 @@ export const ButtonCustom = styled.button`
     padding-top: 0.75rem;
   }
 `;
+
+export const Icon = styled.img``;

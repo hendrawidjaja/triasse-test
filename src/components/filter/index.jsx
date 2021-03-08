@@ -1,10 +1,11 @@
 /* eslint-disable no-unused-vars */
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import {
   Button,
-  Content,
   ButtonCustom,
+  Content,
+  Icon,
   Label,
   Option,
   Section,
@@ -60,6 +61,7 @@ const Filter = () => {
           </Option>
         ))}
       </Select>
+      <Icon></Icon>
     </WrapperSelect>
   ));
 
