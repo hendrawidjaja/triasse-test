@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from "react";
+import Splitline from "../../atomic/splitline";
 import { Checkbox, H4, Input, Label, P, Section, WrapperCheckbox, SplitLine } from "./style";
 
 const FilterSearch = () => {
@@ -20,7 +21,7 @@ const FilterSearch = () => {
           </Label>
         </WrapperCheckbox>
 
-        <SplitLine />
+        <Splitline />
 
         <P>Jenis layanan</P>
         <WrapperCheckbox>

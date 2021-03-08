@@ -2,6 +2,14 @@
 import styled from "styled-components";
 import { DEVICE, SCREEN, SPACING, flex } from "../../styles/base";
 
+export const Checkbox = styled(flex)`
+  box-shadow: 0 1px 4px 0 rgba(128, 128, 128, 0.5);
+  flex-direction: column;
+  border-radius: 8px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+`;
+
 export const P = styled.p`
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -16,29 +24,15 @@ export const P = styled.p`
 
 export const Section = styled(flex)`
   flex-direction: column;
-
-  @media ${DEVICE.minDesktop} {
-  }
-`;
-
-export const Checkbox = styled(flex)`
-  box-shadow: 0 1px 4px 0 rgba(128, 128, 128, 0.5);
-  flex-direction: column;
-  border-radius: 8px;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 `;
 
 export const WrapperCheckbox = styled(flex)`
   align-items: center;
   padding-left: 1.5rem;
-  &.item-last {
-  }
+  padding-right: 1.5rem;
 
-  @media ${DEVICE.minDesktop} {
-    &.item-last {
-      padding-top: 1rem;
-    }
+  &.item-last {
+    padding-top: 1rem;
   }
 `;
 
@@ -53,27 +47,13 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   color: var(--cl-light-grey);
-  height: 1.5em;
-  width: 1.5em;
+  height: 1.75em;
+  width: 1.75em;
   margin: 0;
 
   @media ${DEVICE.minDesktop} {
     border-width: 3px;
     height: 2.25em;
     width: 2.25em;
-  }
-`;
-
-export const SplitLine = styled(flex)`
-  &:after {
-    height: 2px;
-    width: 100%;
-    background-color: var(--bg-light-grey);
-    content: " ";
-  }
-
-  @media ${DEVICE.minDesktop} {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
   }
 `;

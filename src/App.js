@@ -9,6 +9,7 @@ import HeroBanner from "./components/hero-banner";
 import Navbar from "./components/navbar";
 import Newsletter from "./components/newsletter";
 import Home from "./components/home";
+import Home2 from "./components/home2";
 import "./style.scss";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Filter />
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/select" component={Home2} />
         </Switch>
       </Router>
       <Newsletter />

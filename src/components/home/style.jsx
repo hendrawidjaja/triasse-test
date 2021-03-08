@@ -4,6 +4,8 @@ import { DEVICE, SCREEN, SPACING, grid } from "../../styles/base";
 
 export const Section = styled(grid)`
   ${SPACING.gutter};
+  padding-bottom: 3rem;
+  padding-top: 3rem;
 
   @media ${DEVICE.minDesktop} {
     ${SPACING.myAuto};
@@ -15,18 +17,25 @@ export const Section = styled(grid)`
 
 export const Wrapper = styled(grid)`
   grid-auto-flow: row;
+  margin-top: 2rem;
+
+  @media ${DEVICE.minDesktop} {
+    margin-top: 0;
+  }
 `;
 
 export const H4 = styled.h4`
   letter-spacing: 0.5px;
+  padding-bottom: 2rem;
 
   @media ${DEVICE.minDesktop} {
     font-size: 1.2rem;
-    padding-bottom: 2rem;
   }
 `;
 
 export const Content = styled(grid)`
-  grid-template-columns: 25% auto;
-  gap: 2.25rem;
+  @media ${DEVICE.minDesktop} {
+    grid-template-columns: 25% auto;
+    gap: 2.25rem;
+  }
 `;
