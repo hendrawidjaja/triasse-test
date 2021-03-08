@@ -22,13 +22,15 @@ export const P = styled.p`
   color: var(--cl-grey);
 `;
 
-export const Section = styled(grid)`
+export const Section = styled(flex)`
   box-shadow: 0 1px 4px 0 rgba(128, 128, 128, 0.5);
   border-radius: 5px;
   padding: 1.5rem 1rem;
+  flex-direction: column;
 
   @media ${DEVICE.minDesktop} {
     padding: 1.5rem 2rem;
+    max-height: 57.5vh;
   }
 `;
 

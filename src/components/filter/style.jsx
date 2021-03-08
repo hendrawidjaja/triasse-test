@@ -85,7 +85,7 @@ export const Select = styled.select`
   @media ${DEVICE.minDesktop} {
     height: 3em;
     font-size: 1.2rem;
-    padding-left: 1rem;
+    padding-left: 2.5rem;
     padding-right: 1rem;
   }
 `;
@@ -169,4 +169,29 @@ export const ButtonCustom = styled.button`
   }
 `;
 
-export const Icon = styled.img``;
+export const Icon = styled.img`
+  position: absolute;
+  width: 100%;
+  top: 52.5%;
+
+  @media ${DEVICE.minDesktop} {
+  }
+
+  ${(props) =>
+    props.pin &&
+    css`
+      @media ${DEVICE.minDesktop} {
+        left: 2.5%;
+        max-width: 1.1rem;
+      }
+    `}
+
+  ${(props) =>
+    props.map &&
+    css`
+      @media ${DEVICE.minDesktop} {
+        left: 9%;
+        max-width: 1.4rem;
+      }
+    `}
+`;

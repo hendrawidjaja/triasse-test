@@ -61,7 +61,7 @@ const Filter = () => {
           </Option>
         ))}
       </Select>
-      <Icon></Icon>
+      <Icon pin src={require("../../assets/image/img-icon-pin.svg").default} alt="" />
     </WrapperSelect>
   ));
 
@@ -83,6 +83,7 @@ const Filter = () => {
           );
         })}
       </Select>
+      <Icon map src={require("../../assets/image/img-icon-pin-map.svg").default} alt="" />
     </WrapperSelect>
   ));
 
